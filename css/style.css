@@ -1,0 +1,47 @@
+h1, h2, h3, h4, h5, h6 {
+  font-family: Impact;
+  font-weight: 400;
+  font-size: 2.618rem;
+}
+
+body {
+  font-family: Georgia;
+  //font-size looked a little on the large size so kept it at 1rem
+  //font-size: 2.618rem;
+}
+
+#card-grid {
+	display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  #card-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.card {
+  background-color: #CDD7DC;
+  padding: 10px;
+}
+
+.image-container {
+	text-align: center;
+}
+
+.profile-pic {
+	border-radius: 50%;
+	max-width: 8rem;
+	margin-bottom: 1rem;
+	background-color: #5A6469;
+}
+
+.card p {
+	margin: 0.5rem 0;
+}
+
+.full-name {
+	font-weight: bold;
+}
