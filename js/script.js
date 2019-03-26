@@ -49,10 +49,10 @@ function allCards() {
 function createCard(person, idx) {
   return `
   <div class="card" data-last-name="${person.lastName}">
-    <div class="image-container"><img class="profile-pic" src="https://placekitten.com/200/200" alt="A placeholder photo"></div>
+    <div class="image-container"><div class="profile-pic"></div></div>
     <p class="full-name">${person.firstName} ${person.lastName}</p>
     <p class="job-title">${person.jobTitle}</p>
-    ${person.reportsTo ? `<p class="reports-to">Reports to: ${person.reportsTo}</p> `: `<p>Yo ${person.firstName} don't report to no one</p>`}
+    ${person.reportsTo ? `<p class="reports-to">Reports to: ${person.reportsTo}</p> `: ""}
   </div>
   `;
 }
