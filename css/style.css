@@ -10,15 +10,24 @@ body {
   //font-size: 2.618rem;
 }
 
+.page-container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.select-container {
+  margin-bottom: 1rem;
+}
+
 #card-grid {
-	display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: grid;
+  grid-template-columns: 1fr;
   grid-gap: 10px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (min-width: 768px) {
   #card-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
@@ -28,20 +37,24 @@ body {
 }
 
 .image-container {
-	text-align: center;
+  //text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
 .profile-pic {
-	border-radius: 50%;
-	max-width: 8rem;
-	margin-bottom: 1rem;
-	background-color: #5A6469;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  //max-width: 8rem;
+  margin-bottom: 1rem;
+  background-color: #5A6469;
 }
 
 .card p {
-	margin: 0.5rem 0;
+  margin: 0.5rem 0;
 }
 
 .full-name {
-	font-weight: bold;
+  font-weight: bold;
 }
